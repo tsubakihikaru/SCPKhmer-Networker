@@ -32,7 +32,7 @@ Note: this is what it shouldn't be tested with, and has not been tested with.
 
 Alternatively:
 
-1. navigate to scpnetworker.github.io and go to /system:join
+1. navigate to [the site](https://tsubakihikaru.github.io/SCPKhmer-Networker/) and go to the system:join page.
 
 2. Write up an application. 
 

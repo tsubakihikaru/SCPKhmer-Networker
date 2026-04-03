@@ -9,18 +9,23 @@
 
 Note: this is what I tested with, your mileage may differ.
 
-Python: Thonny v
+Python: Thonny v4.1.7
 
 Operating System (OS): Windows 11
+
 
 ## Prohibitions
 
 Note: this is what it shouldn't be tested with, and has not been tested with. 
 
-* Ren'Py
+* Ren'Py - Mostly used for Video Game Parodies
 
-* PDXScript
+* PDXScript - Only Compatible with HOI4
 
+* GoDot - Perfect for a game like [That's Not My Neighbor!](https://store.steampowered.com/app/3431040/Thats_not_my_Neighbor/)
+
+* Unreal Engine - Because that's not this type of project, y'know!
+  
 ## How to launch
 
 ## Creating admin account

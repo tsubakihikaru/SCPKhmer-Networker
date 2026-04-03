@@ -9,6 +9,18 @@
 
 Note: this is what I tested with, your mileage may differ.
 
+Python: Thonny v
+
+Operating System (OS): Windows 11
+
+## Prohibitions
+
+Note: this is what it shouldn't be tested with, and has not been tested with. 
+
+* Ren'Py
+
+* PDXScript
+
 ## How to launch
 
 ## Creating admin account

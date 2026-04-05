@@ -1,1 +1,79 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* HEADER: The top title area */
+#header {
+    background-color: #600; /* Classic SCP Red */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #300;
+}
+
+/* TOP-BAR: Horizontal Nav */
+#top-bar {
+    background-color: #333;
+    padding: 10px;
+}
+
+#top-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#top-bar li { margin: 0 15px; }
+
+#top-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTENT WRAPPER: Puts side-bar and content next to each other */
+#content-wrap {
+    display: flex;
+    min-height: 80vh;
+}
+
+/* SIDE-BAR: Left-side navigation */
+#side-bar {
+    width: 250px;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+}
+
+#side-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#side-bar li { margin-bottom: 10px; }
+
+#side-bar a {
+    color: #b01; /* SCP Link Red */
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+/* MAIN CONTENT: The reading area */
+#main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+#page-title {
+    font-size: 2em;
+    border-bottom: 2px solid #600;
+    margin-bottom: 20px;
+    color: #333;
+}
  

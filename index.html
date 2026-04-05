@@ -1,22 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCPKhmer Networker | Khmernetter</title>
     <style>
-        /* General Layout */
-        body { margin: 0; font-family: "Verdana", sans-serif; background: #f4f4f4; color: #333; }
-        #header { background: #900; color: #fff; padding: 30px; text-align: center; border-bottom: 5px solid #600; }
-        #top-bar { background: #333; padding: 10px; text-align: center; }
-        #top-bar a { color: #fff; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.9em; }
+        /* CSS resets and layout */
+        body { margin: 0; font-family: "Verdana", Geneva, sans-serif; background: #f4f4f4; color: #333; line-height: 1.5; }
+        #container { display: flex; flex-direction: column; min-height: 100vh; }
 
-        /* The "Sigma" Flexbox Layout */
-        #content-wrap { display: flex; min-height: 100vh; }
-        
-        #side-bar { width: 220px; background: #eee; padding: 20px; border-right: 1px solid #ccc; }
-        #side-bar .heading { font-weight: bold; border-bottom: 1px solid #600; margin-bottom: 10px; color: #600; }
-        #side-bar ul { list-style: none; padding: 0; margin-bottom: 20px; }
-        #side-bar a { color: #900; text-decoration: none; font-size: 0.85em; }
+        /* HEADER: The "Duksin-Proof" Crimson Banner */
+        #header { background: #900; color: #fff; padding: 20px 40px; border-bottom: 5px solid #600; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        #header h1 { margin: 0; font-size: 2.2em; }
+        #header h1 a { color: #fff; text-decoration: none; text-shadow: 2px 2px #000; }
+        #header h2 { margin: 0; font-size: 1em; font-weight: normal; opacity: 0.8; font-style: italic; }
 
-        #main-content { flex-grow: 1; padding: 40px; background: #fff; }
-        #page-title { font-size: 2em; font-weight: bold; border-bottom: 2px solid #900; margin-bottom: 20px; }
+        /* TOP-BAR: Admin Nav */
+        #top-bar { background: #333; padding: 10px; border-bottom: 1px solid #000; }
+        #top-bar ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; }
+        #top-bar li { margin: 0 15px; }
+        #top-bar a { color: #ccc; text-decoration: none; font-weight: bold; font-size: 0.9em; transition: 0.3s; }
+        #top-bar a:hover { color: #fff; }
+
+        /* MAIN CONTENT WRAPPER */
+        #content-wrap { display: flex; flex-grow: 1; }
+
+        /* SIDE-BAR: Navigation Fortress */
+        #side-bar { width: 240px; background: #eee; padding: 20px; border-right: 1px solid #ccc; box-sizing: border-box; }
+        .side-block { margin-bottom: 25px; }
+        .side-block .heading { font-weight: bold; color: #900; border-bottom: 2px solid #900; margin-bottom: 10px; text-transform: uppercase; font-size: 0.8em; }
+        #side-bar ul { list-style: none; padding: 0; margin: 0; }
+        #side-bar li { margin-bottom: 8px; }
+        #side-bar a { color: #b01; text-decoration: none; font-size: 0.9em; display: block; padding: 3px 0; }
+        #side-bar a:hover { text-decoration: underline; color: #600; }
+
+        /* MAIN READING AREA */
+        #main-content { flex-grow: 1; padding: 40px; background: #fff; box-shadow: inset 5px 0 10px -5px rgba(0,0,0,0.1); }
+        #page-title { font-size: 2.2em; font-weight: bold; color: #333; border-bottom: 2px solid #ddd; margin-bottom: 20px; padding-bottom: 10px; }
+        .km-text { color: #666; font-size: 0.8em; font-style: italic; }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            #content-wrap { flex-direction: column; }
+            #side-bar { width: 100%; border-right: none; border-bottom: 1px solid #ccc; }
+        }
     </style>
 </head>
+<body>
+    <div id="container">
+        
+        <header id="header">
+            <h1><a href="#">SCPKhmer Networker</a></h1>
+            <h2>Knowledge is Protection</h2>
+        </header>
+
+        <nav id="top-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Policies</a></li>
+                <li><a href="https://wikidot.com" target="_blank">Official Wiki</a></li>
+            </ul>
+        </nav>
+
+        <div id="content-wrap">
+            <nav id="side-bar">
+                <div class="side-block">
+                    <div class="heading">Navigation</div>
+                    <ul>
+                        <li><a href="#">Main Site <span class="km-text">(Placeholder)</span></a></li>
+                        <li><a href="#">Staff Policies <span class="km-text">(Placeholder)</span></a></li>
+                    </ul>
+                </div>
+                <div class="side-block">
+                    <div class="heading">Staff Tools</div>
+                    <ul>
+                        <li><a href="#">Translation Hub</a></li>
+                        <li><a href="#">Licensing Guide</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main id="main-content">
+                <div id="page-title">Welcome to Khmernetter</div>
+                <div id="page-content">
+                    <p>This is the secure staff documentation site for the <strong>Khmer-speaking SCP Branch</strong>.</p>
+                    <p>Access to these documents is currently restricted to authorized personnel. Use the side navigation to browse established protocols.</p>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
